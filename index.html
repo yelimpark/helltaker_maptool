@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+<body>
+    <div id="menu">
+        <div class="upper_menu">
+            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" />
+            <div>
+                <p>Left Margine</p>
+                <input type="text" id="left_margin_input">
+            </div>
+            <div>
+                <p>Top Margine</p>
+                <input type="text" id="top_margin_input">
+            </div>
+            <div>
+                <p>Tile size</p>
+                <input type="text" id="tile_size_input">
+            </div>
+            <button id="apply" onclick="styleGrid()">적용</button>
+        </div>
+
+        <div class="bottom_menu">
+            <button onclick="setCurMapCode('W', this)">WALL</button>
+            <button onclick="setCurMapCode('S', this)">SKULL</button>
+            <button onclick="setCurMapCode('P', this)">PLAYER</button>
+            <button onclick="setCurMapCode('B', this)">BOX</button>
+            <button onclick="setCurMapCode('D', this)">DEMON</button>
+            <button onclick="setCurMapCode('C', this)">CLAWS</button>
+            <button onclick="setCurMapCode('K', this)">KEY</button>
+            <button onclick="setCurMapCode('L', this)">LOCK</button>
+
+        </div>
+
+        <button id="saveBtn" onclick="save()">저장</button>
+    </div>
+
+    <div id="canvas">
+        <table id="grid">
+
+        </table>
+        <div id="image_container">
+        </div>
+    </div>
+</body>
+</html>

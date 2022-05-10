@@ -1,0 +1,167 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    left: 20px;
+    top: 20px;
+    z-index: 20;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#menu div {
+    padding: 20px 30px;
+}
+
+.upper_menu {
+    border-bottom: 1px solid grey;
+}
+
+#menu .upper_menu * {
+    padding: 5px 0;
+    width: 100%;
+}
+
+#apply {
+    margin-top: 20px;
+    background-color: #bfd494;
+}
+
+.bottom_menu {
+
+}
+
+.bottom_menu button {
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom : 5px;
+
+}
+
+.bottom_menu button:hover {
+    background-color: #bfd494;
+}
+
+#saveBtn {
+    width: 100%;
+    background-color: #bfd494;
+}
+
+#canvas {
+    position: relative;
+    cursor: move;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    z-index:10;
+    position:absolute;
+}
+
+.E {
+    border: 1px solid white;
+    padding : 0;
+    margin : 0;
+}
+
+.E:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.W {
+    background-color: rgba(255, 17, 0, 0.8);
+    padding: 0;
+}
+
+.P {
+    background-image: url("./Sprite/hero.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.S {
+    background-image: url("./Sprite/skull.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.B {
+    background-image: url("./Sprite/box.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.D {
+    background-image: url("./Sprite/demon.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.C {
+    background-image: url("./Sprite/claws.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.K {
+    background-image: url("./Sprite/key.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+.L {
+    background-image: url("./Sprite/lockbox.png");
+    border: 1px solid white;
+    background-size: cover;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    z-index: 1;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: var(--button-bg-color);
+    color: var(--button-color);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    width: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input {
+    z-index:100;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    background-color: #bfd494;
+    padding : 5px 20px;
+    border-radius: 10px;
+}
