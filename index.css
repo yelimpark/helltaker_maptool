@@ -40,7 +40,16 @@ body {
     width: 40%;
     margin-right: 20px;
     margin-bottom : 5px;
+}
 
+.bottom_menu .deactive {
+    color:black;
+    font-weight:normal;
+}
+
+.bottom_menu .active {
+    color:#006620;
+    font-weight:bold;
 }
 
 .bottom_menu button:hover {

@@ -1,13 +1,17 @@
 var curMapCode = "E";
 
 function setCurMapCode(mapCode, caller) {
+    let buttonlist = document.getElementsByClassName("bottom_menu")[0].children;
+    for (i = 0; i < buttonlist.length; i++) {
+        buttonlist[i].setAttribute("class", "deactive");
+    }
+
     if (curMapCode == mapCode) {
         curMapCode = "E";
-        caller.style.backgroundColor = "white";
     }
     else {
         curMapCode = mapCode;
-        caller.style.backgroundColor = "#bfd494";
+        caller.setAttribute("class", "active");
     }
 }
 
